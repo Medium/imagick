@@ -1918,10 +1918,10 @@ func (mw *MagickWand) OptimizeImageLayers() *MagickWand {
 // not effect the outcome of an overlay) is made transparent.
 // WARNING: This modifies the current images directly, rather than generate a
 // new image sequence.
-//func (mw *MagickWand) OptimizeImageTransparency() error {
-//	C.MagickOptimizeImageTransparency(mw.mw)
-//	return mw.GetLastError()
-//}
+func (mw *MagickWand) OptimizeImageTransparency() error {
+	C.MagickOptimizeImageTransparency(mw.mw)
+	return mw.GetLastError()
+}
 
 // Performs an ordered dither based on a number of pre-defined dithering
 // threshold maps, but over multiple intensity levels, which can be different
