@@ -39,11 +39,3 @@ func (mw *MagickWand) GetLastError() error {
 	}
 	return nil
 }
-
-func (mw *MagickWand) getLastErrorIfFailed(ok C.MagickBooleanType) error {
-	if C.int(ok) == 0 {
-		return mw.GetLastError()
-	} else {
-		return nil
-	}
-}
