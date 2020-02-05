@@ -5,6 +5,7 @@
 package imagick
 
 /*
+#cgo !no_pkgconfig pkg-config: MagickWand MagickCore
 #include <magick/MagickCore.h>
 
 #if defined(__cplusplus) || defined(c_plusplus)
