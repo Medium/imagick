@@ -1,6 +1,6 @@
 package imagick
 
-import "gopkg.in/gographics/imagick.v2/imagick/types"
+import "github.com/Medium/imagick/imagick/types"
 
 // Destroy instance of Destroyer
 // If GOGC=off you should call obj.Destroy() manually
